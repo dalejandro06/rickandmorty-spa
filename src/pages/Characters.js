@@ -1,10 +1,11 @@
-import getData from '../utils/getData'
-import getHash from '../utils/getHash'
+import getData from '../utils/getData';
+import getHash from '../utils/getHash';
 
 const Character = async () => {
-  const id = getHash()
-  const Character = await getData(id)
-  const view = `
+	const id = getHash();
+	const Character = await getData(id);
+	console.log({ Character });
+	const view = `
     <div class="Characters-inner">
       <article class="Characters-card">
         <img src="${Character.image}" alt="${Character.name}">
@@ -17,10 +18,13 @@ const Character = async () => {
         <h3>Gender: <span>${Character.gender}</span></h3>
         <h3>Origin: <span>${Character.origin.name}</span></h3>
         <h3>Last Location: <span>${Character.location.name}</span></h3>
+        <h3>Type: <span>${
+					Character.type == '' ? 'Unknown' : Character.type
+				}</span></h3>
       </article>
     </div>
-  `
-  return view
-}
+  `;
+	return view;
+};
 
-export default Character
+export default Character;

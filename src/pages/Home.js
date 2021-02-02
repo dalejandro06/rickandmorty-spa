@@ -1,24 +1,30 @@
-import getData from '../utils/getData'
+import getData from '../utils/getData';
 
 const Home = async () => {
-  //como es el home, queremos que traiga todos los personajes
-  //por eso no le pasamos ningun id
-  const characters = await getData()
-  const view = `
-    <div calss="Characters">
-      ${characters.results.map(character => `
+	//Como es el home, no le pasamos ningún id
+	const characters = await getData();
+	const view = `
+    <div class="Characters">
+      ${characters.results
+				.map(
+					(character) => `
         <article class="Character-item">
           <a href="#/${character.id}/">
           <img src="${character.image}" alt="${character.name}">
+          <div class="Character-info">
           <h2>${character.name}</h2>
+          <p>${character.species}</p>
+          </div>
           </a>
         </article>
-      `).join('')}
+      `
+				)
+				.join('')}
     </div> 
-  `
-  //join porque .map retorna un arreglo, y cada personaje se separa por comas
-  //para que no se vean las comas del array en la pagina, usamos join
-  return view
-}
+  `;
+	//join porque .map retorna un arreglo, y cada personaje se separa por comas
+	//para que no se vean las comas del array en la pagina, usamos join
+	return view;
+};
 
-export default Home
+export default Home;

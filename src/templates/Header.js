@@ -1,9 +1,10 @@
 const Header = () => {
-  const view = `
+	const home = location.href;
+	const view = `
     <div class="Header-main">
       <div class="Header-logo">
         <h1>
-          <a href="/">
+          <a href="${home}">
             100tifi.co
           </a>
         </h1>
@@ -14,8 +15,8 @@ const Header = () => {
         </a>
       </div>
     </div>  
-  `
-  return view
-}
+  `;
+	return view;
+};
 
-export default Header
+export default Header;

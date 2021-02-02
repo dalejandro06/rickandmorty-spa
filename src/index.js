@@ -1,5 +1,5 @@
 //escucha cuando la pagina ya esta lista
-import router from './routes'
+import router from './routes';
 
-window.addEventListener('load', router)
-window.addEventListener('hashchange', router)
+window.addEventListener('load', router);
+window.addEventListener('hashchange', router);
