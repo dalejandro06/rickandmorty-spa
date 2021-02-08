@@ -1,10 +1,10 @@
 const Header = () => {
-	const home = location.href;
+	const home = location.origin;
 	const view = `
     <div class="Header-main">
       <div class="Header-logo">
         <h1>
-          <a href="${home}">
+          <a href="${home}/rickandmorty-spa">
             100tifi.co
           </a>
         </h1>
