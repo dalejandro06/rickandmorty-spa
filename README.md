@@ -13,15 +13,16 @@ npm install
 
 You can visit the app [here](https://dalejandro06.github.io/rickandmorty-spa/).
 
+## Visuals
+
+![](./img/mockup1.jpg)
+
 ## Code examples
 
 This is the custom router this app implements in its core, made with JavaScript.
 Its simple because the app only needs three paths, one of them get the id in the location and returns the character in that index.
+
 ![](./img/router.png)
-
-## Visuals
-
-![](./img/mockup1.jpg)
 
 ## Contributing
 
