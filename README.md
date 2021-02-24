@@ -1,17 +1,19 @@
 # Rick and Morty Characters
 
-A web-app that shows all of the characters in the Rick and Morty serie.
+A web-app that shows all of the characters in the Rick and Morty series.
 Made with JavaScript Vanilla and using Webpack as a module bundler.
+Implementing Travis-ci as a continuous deployment tool.
 
-## Installation
+## Installation and run local
 
 ```bash
 npm install
+npm run start
 ```
 
 ## Demo
 
-You can visit the app [here](https://dalejandro06.github.io/rickandmorty-spa/).
+You can view the app [here](https://dalejandro06.github.io/rickandmorty-spa/).
 
 ## Visuals
 
