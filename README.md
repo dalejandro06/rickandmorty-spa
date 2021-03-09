@@ -22,7 +22,7 @@ You can view the app [here](https://dalejandro06.github.io/rickandmorty-spa/).
 ## Code examples
 
 This is the custom router this app implements in its core, made with JavaScript.
-Its simple because the app only needs three paths, one of them get the id in location and returns the character in that index.
+Its simple cause the app only needs three paths, one of them get the id from location and returns the character in that math with the index.
 
 ![](./img/router.png)
 
